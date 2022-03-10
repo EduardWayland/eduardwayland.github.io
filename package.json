@@ -19,7 +19,7 @@
         "build:sass": "sass --no-source-map src/sass:public/css",
         "build": "npm-run-all copy:html build:*",
         "postbuild": "postcss public/css/*.css -u autoprefixer cssnano -r --no-map",
-        "deploy": "npm run build && gh-pages -d public -b main -m [Deploy] Automatic update"
+        "deploy": "npm run build && gh-pages -d public -b main -m \"[Deploy] Automatic update\""
     },
     "dependencies": {
         "gh-pages": "^3.2.3",

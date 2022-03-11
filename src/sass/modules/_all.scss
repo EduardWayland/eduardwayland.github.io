@@ -1,0 +1,48 @@
+@use '../utilities/variables' as *;
+
+* {
+    margin: 0;
+    padding: 0;
+
+    box-sizing: border-box;
+
+    font-family: $font-primary;
+    list-style: none;
+    text-decoration: none;
+
+    user-select: none;
+}
+
+body {
+    display: block;
+    align-content: center;
+    background-color: $color-bg-primary;
+}
+section {
+    margin-top: 3vh;
+    border-top: 2px solid black;
+}
+
+h1 {
+    font-size: 70px;
+}
+
+h2 {
+    font-size: 60px;
+}
+
+h3 {
+    font-size: 50px;
+}
+
+h4 {
+    font-size: 40px;
+}
+
+h5 {
+    font-size: 30px;
+}
+
+h6 {
+    font-size: 20px;
+}

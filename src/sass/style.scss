@@ -1,0 +1,47 @@
+@use 'libs/include-media';
+
+@use 'utilities/fonts';
+@use 'utilities/variables' as *;
+
+@use 'modules/all';
+@use 'modules/navbar';
+@use 'modules/header';
+@use 'modules/main';
+
+.flex {
+    display: flex;
+    gap: 10px;
+}
+
+.container {
+    margin-right: auto;
+    margin-left: auto;
+    width: 1500px;
+}
+
+.title {
+    color: white;
+    font-size: 60px;
+    font-weight: 700;
+    font-family: $font-secondary;
+
+    line-height: 75px;
+    letter-spacing: 2px;
+
+    span {
+        @extend .title;
+        color: $color-accent;
+    }
+}
+
+.subtitle {
+    color: $color-primary;
+    
+    font-size: 14px;
+    font-weight: 500;
+    font-family: $font-secondary;
+
+    text-transform: uppercase;
+
+    letter-spacing: 3px;
+}

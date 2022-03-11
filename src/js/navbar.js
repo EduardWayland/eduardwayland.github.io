@@ -1,4 +1,3 @@
-
 var nav = $('nav');
 var scrollPosition, navOpacity;
 
@@ -24,7 +23,7 @@ jQuery(function() {
                 navOpacity = (scrollPosition / jQuery(window).height()) + 0.2;
 
                 nav.css('background-color', "rgba(var(--color-primary), " + navOpacity + ")");
-        });
+            });
 
         jQuery('nav > ul > li').on('click', function(e) {
             $('nav > ul > li').removeClass('selected');

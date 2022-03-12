@@ -136,3 +136,20 @@ header {
         }
     }
 }
+
+@include media('>phone','<desktop') {
+    header .above h1, header .above h1 span {
+        font-size: 50px;
+    }
+    header .above .main .content {
+        font-size: 18px;
+    }
+}
+@include media('<=phone') {
+    header .above h1, header .above h1 span {
+        font-size: 40px;
+    }
+    header .above .main .content {
+        font-size: 18px;
+    }
+}

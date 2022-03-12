@@ -18,3 +18,8 @@ main {
         }
     }
 }
+@include media('>tablet', '<desktop') {
+    main section .title {
+        font-size: 50px;
+    }
+}

@@ -1,4 +1,4 @@
-@use 'libs/include-media';
+@use 'libs/include-media' as *;
 
 @use 'utilities/fonts';
 @use 'utilities/variables' as *;
@@ -31,6 +31,13 @@
     span {
         @extend .title;
         color: $color-accent;
+    }
+
+    @include media('>phone','<desktop') {
+        line-height: 60px;
+    }
+    @include media('<=phone') {
+        line-height: 50px;
     }
 }
 

@@ -1,4 +1,3 @@
-
 var nav = $('nav');
 var scrollPosition, navOpacity;
 
@@ -8,25 +7,25 @@ jQuery(function() {
 
         nav.css('background-color', 'rgba(var(--color-primary), ' + navOpacity + ')');
         jQuery(window).on('scroll', function() {
-                var offset = jQuery(window).scrollTop();
-                var height = nav.height();
-                var heightOffset = 25;
+            if(document.getElementById('menu-btn').checked) {
+                document.getElementById('menu-btn').checked = false;
+            }
+            var offset = jQuery(window).scrollTop();
+            var height = nav.height();
+            var heightOffset = 25;
 
-                if(offset >= (height + heightOffset)) {
-                    nav.addClass('sticky');
-                } else if(offset < (height + heightOffset) && nav.hasClass('sticky')) {
-                    nav.removeClass('sticky');
-                }
-
-                console.log(offset + "/" + height);
-
+            if(offset >= (height + heightOffset)) {
                 scrollPosition = jQuery(window).scrollTop();
                 navOpacity = (scrollPosition / jQuery(window).height()) + 0.2;
 
+                nav.addClass('sticky');
                 nav.css('background-color', "rgba(var(--color-primary), " + navOpacity + ")");
+            } else if(offset < (height + heightOffset) && nav.hasClass('sticky')) {
+                nav.removeClass('sticky');
+            }
         });
 
-        jQuery('nav > ul > li').on('click', function(e) {
+        jQuery('nav .menu > li').on('click', function(e) {
             $('nav > ul > li').removeClass('selected');
             if($(this).index() == 0) {
                 return;

@@ -41,7 +41,7 @@ nav {
                 text-align: center;
                 color: $color-btn-text;
                 transition: background-color 500ms ease-out 50ms;
-                &:hover, .selected {
+                &:hover, &.selected {
                     background-color: $color-btn-accent;
                     box-shadow: 0px 3px 4px -2px $color-btn-accent
                 }

@@ -26,11 +26,11 @@ jQuery(function() {
         });
 
         jQuery('nav .menu > li').on('click', function(e) {
-            $('nav > ul > li').removeClass('selected');
+            $('nav .menu > li').children('a').removeClass('selected');
             if($(this).index() == 0) {
                 return;
             }
-            $(this).addClass('selected');
+            $(this).children('a').addClass('selected');
             e.preventDefault();
         });
 });

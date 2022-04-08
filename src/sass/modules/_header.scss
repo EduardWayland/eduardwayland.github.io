@@ -133,6 +133,18 @@ header {
                 .parallax {
                     background-attachment: scroll;
                 }
+                .parallax {
+                    min-width: 300px;
+                    min-height: 300px;
+                }
+                .shadow {
+                    min-width: 320px;
+                    min-height: 320px;
+                }
+                .border {
+                    min-height: 320px;
+                    min-width: 320px;
+                }
             }
         }
         .below {

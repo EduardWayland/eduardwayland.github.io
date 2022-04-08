@@ -1,4 +1,5 @@
 @use 'libs/include-media' as *;
+@use 'libs/animation';
 
 @use 'utilities/fonts';
 @use 'utilities/variables' as *;
@@ -12,7 +13,7 @@
 
 .flex {
     display: flex;
-    gap: 10px;
+    gap: 25px;
 }
 
 .container {

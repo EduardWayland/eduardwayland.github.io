@@ -4,7 +4,7 @@ jQuery(window).on('scroll', function () {
         var reveal = $(this);
         var windowHeight = jQuery(window).height();
         var elementTop = reveals[i].getBoundingClientRect().top;
-        var elementVisible = 150;
+        var elementVisible = windowHeight / 10;
 
         if (elementTop < windowHeight - elementVisible) {
             reveal.addClass("active " + reveal.data('anim'));

@@ -8,11 +8,15 @@
     justify-content: center;
 
     .categories {
-        display: grid;
-        grid-template-columns: repeat(3, 20em);
+        gap: 0;
+        flex: 1;
+        flex-wrap: wrap;
+        flex-direction: row;
 
+        justify-content: center;
         button {
             height: 3em;
+            width: 20em;
 
             color: $color-btn-text;
             background-color: $color-bg-primary;
@@ -22,28 +26,14 @@
             font-family: $font-secondary;
             
             border: none;
-            border-top: 2px solid transparent;
-            border-bottom: 2px solid transparent;
-            border-radius: 0px;
-            box-shadow: 0px 3px 4px -2px $color-btn-accent;
+            border-radius: 10px;
+            box-shadow: 0px 0px 5px 1px $color-btn-accent;
 
             &:hover, &.selected {
                 background-color: $color-btn-accent;
-                box-shadow: 0px 3px 4px -2px $color-btn-accent;
+                box-shadow: 0px 0px 5px 1px $color-btn-accent;
                 transition: background-color 500ms ease-out 50ms;
             }
-        }
-        :first-child {
-            border-left: 2px solid transparent;
-            border-top: 2px solid transparent;
-            border-bottom: 2px solid transparent;
-            border-radius: 10px 0px 0px 10px;
-        }
-        :last-child {
-            border-right: 2px solid transparent;
-            border-top: 2px solid transparent;
-            border-bottom: 2px solid transparent;
-            border-radius: 0px 10px 10px 0px;
         }
     }
     .categories_frames {

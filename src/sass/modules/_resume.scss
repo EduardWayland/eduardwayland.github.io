@@ -47,17 +47,8 @@
         }
     }
     .categories_frames {
-        div:not(.visible) {
+        div:not(.active-anim) {
             display: none;
         }
-
-        .visible {
-            opacity: 1;
-            animation: fade 2s linear forwards;
-        }
     }
-}
-@keyframes fade {
-  0%,100% { opacity: 1 }
-  50% { opacity: 0 }
 }

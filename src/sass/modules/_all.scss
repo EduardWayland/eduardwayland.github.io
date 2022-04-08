@@ -22,6 +22,10 @@ body {
 section {
     margin-top: 3vh;
     border-top: 2px solid black;
+
+    div {
+        margin-top: 4vh;
+    }
 }
 
 h1 {
@@ -46,4 +50,15 @@ h5 {
 
 h6 {
     font-size: 10px;
+}
+
+.box-content {
+    border-radius: 25px 25px;
+    box-shadow: 0 0 5px 1px rgb(61, 61, 61);
+    background-image: linear-gradient(to bottom right, $color-bg-primary, $color-bg-primary-darker);
+
+    &:hover {
+        box-shadow: 0 0 5px 1px rgb(122, 122, 122);
+        background-image: linear-gradient(to bottom right, $color-bg-primary-darker, $color-bg-primary);
+    }
 }

@@ -5,7 +5,7 @@ jQuery(function() {
         $('main section .resume .categories button').removeClass('selected');
         $(this).addClass('selected');
 
-        $('main section .resume .categories_frames *').each(function (i, e) {
+        $('main section .resume .categories_frames *').each(function () {
             $(this).removeClass('active-anim ' + $(this).data('anim'));
         });
     

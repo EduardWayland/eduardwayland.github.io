@@ -123,7 +123,7 @@
                         <h4>Mobile Development</h4>
                         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eius, at molestias? Voluptas dicta labore cupiditate.</p>
                     </div>
-                    <div class="box-content reveal" data-anim="fade-right">
+                    <div class="box-content reveal" data-anim="fade-top">
                         <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-world" viewBox="0 0 24 24">
                             <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
                             <circle cx="12" cy="12" r="9"></circle>
@@ -131,8 +131,17 @@
                             <line x1="3.6" y1="15" x2="20.4" y2="15"></line>
                             <path d="M11.5 3a17 17 0 0 0 0 18"></path>
                             <path d="M12.5 3a17 17 0 0 1 0 18"></path>
-                         </svg>
+                        </svg>
                         <h4>Web Development</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odio ipsa eaque rem, at eos explicabo.</p>
+                    </div>
+                    <div class="box-content reveal" data-anim="fade-right">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-currency-ethereum" viewBox="0 0 24 24">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                            <path d="M6 12l6 -9l6 9l-6 9z"></path>
+                            <path d="M6 12l6 -3l6 3l-6 2z"></path>
+                        </svg>
+                        <h4>Blockchain Development</h4>
                         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odio ipsa eaque rem, at eos explicabo.</p>
                     </div>
                 </div>
@@ -146,18 +155,44 @@
                 <span class="title">My Resume</span>
                 <div class="flex resume">
                     <div class="flex categories">
-                        <button data-target="resume_div_education">Education</button>
-                        <button class="selected" data-target="resume_div_skills">Skills</button>
+                        <button class="selected" data-target="resume_div_education">Education</button>
+                        <button data-target="resume_div_skills">Skills</button>
                         <button data-target="resume_div_experience">Experience</button>
                     </div>
                     <div class="categories_frames">
-                        <div data-anim="fade-in" id="resume_div_education">
-                            1 Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo eos dicta itaque est odit atque rerum vel aperiam. Quisquam eum nisi beatae pariatur, aperiam tenetur atque neque reiciendis placeat aliquid!
+                        <div class="flex active-anim" data-anim="fade-in" id="resume_div_education">
+                            <div class="box-content">
+                                <div class="head">
+                                    <h4>Lorem, ipsum dolor.</h4>
+                                    <span>Lorem ipsum dolor sit.</span>
+                                </div>
+                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugit ducimus accusantium expedita laboriosam accusamus? Quis officia consequuntur ducimus rerum fugiat corrupti totam recusandae, dignissimos libero ipsam facere cumque exercitationem quisquam.</p>
+                            </div>
+                            <div class="box-content">
+                                <div class="head">
+                                    <h4>Lorem, ipsum dolor.</h4>
+                                    <span>Lorem ipsum dolor sit.</span>
+                                </div>
+                                <p>Optio, minima reiciendis expedita, quidem ea ad omnis, mollitia accusantium consectetur alias veniam totam laborum delectus possimus dicta! Corporis accusantium rem iure possimus voluptas architecto perferendis inventore placeat deleniti numquam?</p>
+                            </div>
                         </div>
-                        <div class="active-anim" data-anim="fade-in" id="resume_div_skills">
-                            2 Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi eum id nobis doloribus aut ex voluptate modi, corporis ipsam excepturi eius laboriosam in cumque! Ullam blanditiis dicta laudantium ab suscipit!
+                        <div class="flex" data-anim="fade-in" id="resume_div_skills">
+                            <div class="box-content">
+                                <div class="head">
+                                    <h4>Lorem, ipsum dolor.</h4>
+                                    <span>Lorem ipsum dolor sit.</span>
+                                </div>
+                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugit ducimus accusantium expedita laboriosam accusamus? Quis officia consequuntur ducimus rerum fugiat corrupti totam recusandae, dignissimos libero ipsam facere cumque exercitationem quisquam.</p>
+                            </div>
+                            <div class="box-content">
+                                <div class="head">
+                                    <h4>Lorem, ipsum dolor.</h4>
+                                    <span>Lorem ipsum dolor sit.</span>
+                                </div>
+                                <p>Optio, minima reiciendis expedita, quidem ea ad omnis, mollitia accusantium consectetur alias veniam totam laborum delectus possimus dicta! Corporis accusantium rem iure possimus voluptas architecto perferendis inventore placeat deleniti numquam?</p>
+                            </div>
                         </div>
-                        <div data-anim="fade-in" id="resume_div_experience">
+                        <div class="flex" data-anim="fade-in" id="resume_div_experience">
                             3 Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perferendis eum temporibus illo vel ab quis, consequuntur fugiat officia labore repellat explicabo ratione quas et ullam fugit vero quod dolorum quasi!
                         </div>
                     </div>
